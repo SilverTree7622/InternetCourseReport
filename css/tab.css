@@ -7,8 +7,7 @@ body {font-family: "Lato", sans-serif;}
     float: left;
     border: none;
     outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
+    padding: 16px 16px;
     font-size: 17px;
     width: 25%;
 }
@@ -22,12 +21,12 @@ body {font-family: "Lato", sans-serif;}
 .tabcontent {
     color: white;
     display: none;
-    padding: 50px;
+    padding: 20px;
     text-align: center;
 }
 
 /* Style each tab content individually */
-#Lifeline {background-color:red;}
+#Lifeline {background-color:purple;}
 #Family {background-color:green;}
 #About {background-color:blue;}
 #Application {background-color:orange;}

@@ -3,14 +3,22 @@
 <head>
   <title>YDH Portfolio</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/tab.css">
+  <link rel="stylesheet" href="css/tab.css"><!-- tab style css-->
 </head>
 <body>
 
-<header> <!-- Tab inside contents -->
+<header> <!-- tab button event N setting-->
+  <button class="tablink" onclick="opentab('Lifeline', this, 'purple')" id="defaultOpen">Lifeline</button>
+  <button class="tablink" onclick="opentab('Family', this, 'green')">Family</button>
+  <button class="tablink" onclick="opentab('About', this, 'blue')">About</button>
+  <button class="tablink" onclick="opentab('Application', this, 'orange')">Application</button>
+</header>
+
+<section> <!-- Tab inside contents -->
   <div id="Lifeline" class="tabcontent">
     <h1>London</h1>
-    <p>London is the capital city of England.</p>
+    <p>London is the capital city of England.
+    <br><br><br><br><br><br><br><br></p>
   </div>
 
   <div id="Family" class="tabcontent">
@@ -27,15 +35,9 @@
     <h1>Oslo</h1>
     <p>Oslo is the capital of Norway.</p>
   </div>
-</header>
-
-<section> <!-- tab setting-->
-  <button class="tablink" onclick="opentab('Lifeline', this, 'red')" id="defaultOpen">Lifeline</button>
-  <button class="tablink" onclick="opentab('Family', this, 'green')">Family</button>
-  <button class="tablink" onclick="opentab('About', this, 'blue')">About</button>
-  <button class="tablink" onclick="opentab('Application', this, 'orange')">Application</button>
 </section>
 
+<!-- javascript function opentab-->
 <script>
 function opentab(cityName,elmnt,color) {
     var i, tabcontent, tablinks;
