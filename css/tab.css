@@ -1,0 +1,37 @@
+/* Style the tab buttons */
+body {font-family: "Lato", sans-serif;}
+
+.tablink {
+    font-weight: bold;
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    font-size: 15px;
+    width: 20%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+    transition: all .9s ease;
+    -webkit-transition: all .9s ease;
+    background-color: #777;
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    text-align: center;
+    padding-bottom: 50%;
+    padding: 15%;
+}
+
+/* Style each tab content individually */
+#Home {background-color:red;}
+#Lifeline {background-color:purple;}
+#Family {background-color:green;}
+#About {background-color:blue;}
+#App {background-color:orange;}

@@ -1,10 +1,84 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>YDH Portfolio</title>
-  </head>
-  <body>
+<html>
+<head>
+  <title>YDH Portfolio</title>
 
-  </body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- tab style css-->
+  <link rel="stylesheet" href="css/tab.css">
+  <!--shake css -->
+  <link rel="stylesheet" href="css/csshake-hard.css">
+  <link rel="stylesheet" href="css/csshake-little.css">
+</head>
+
+<body>
+<!-- tab button event N setting-->
+<header>
+  <button class="tablink" onclick="opentab('Home', this, 'red')" id="defaultOpen">Home</button>
+  <button class="tablink" onclick="opentab('Lifeline', this, 'purple')" id="defaultOpen">Lifeline</button>
+  <button class="tablink" onclick="opentab('Family', this, 'green')">Family</button>
+  <button class="tablink" onclick="opentab('About', this, 'blue')">About</button>
+  <button class="tablink" onclick="opentab('App', this, 'orange')">App</button>
+</header>
+
+<!-- Tab insiders -->
+<section>
+  <div id="Home" class="tabcontent">
+    <h1>Welocome to Crazy Hunter Portfolio!</h1><br>
+
+      <div>움직일
+      <!-- Move like a Madman css!-->
+      <div class="shake-little shake-constant">
+        <a class="btn shake-hard" hover="ga('send', 'event', 'download', 'csshake-hard', 'expanded');">동(動)
+        </a>
+      </div>!<br>
+      헌팅의 헌!
+      </div>
+      <br>
+    안녕하세요 <strong>사냥꾼 유동헌</strong>의 포트폴리오 사이트에 오신것을 환영합니다!
+
+  </div>
+
+  <div id="Lifeline" class="tabcontent">
+    <h1>London</h1>
+    <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="Family" class="tabcontent">
+    <h1>Paris</h1>
+    <p>Paris is the capital of France.</p>
+  </div>
+
+  <div id="About" class="tabcontent">
+    <h1>Tokyo</h1>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+
+  <div id="App" class="tabcontent">
+    <h1>Oslo</h1>
+    <p>Oslo is the capital of Norway.</p>
+  </div>
+</section>
+
+<!-- javascript function opentab-->
+<script>
+function opentab(cityName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(cityName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
 </html>
