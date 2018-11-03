@@ -1,3 +1,6 @@
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
 function opentab(tabname,elmnt,color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -11,9 +14,6 @@ function opentab(tabname,elmnt,color) {
     document.getElementById(tabname).style.display = "block";
     elmnt.style.backgroundColor = color;
 }
-
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
 
 // play audio
 function audioplay() {
