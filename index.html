@@ -3,8 +3,75 @@
   <head>
     <meta charset="utf-8">
     <title>YDH Portfolio</title>
-  </head>
-  <body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- tab html importing-->
+ <link rel="import" href="html/about.html">
+ <link rel="import" href="html/app.html">
+ <link rel="import" href="html/family.html">
+ <link rel="import" href="html/lifeline.html">
+ <!-- tab style css-->
+ <link rel="stylesheet" href="css/tab.css">
+ <!--shake css -->
+ <link rel="stylesheet" href="css/csshake-hard.css">
+ <link rel="stylesheet" href="css/csshake-little.css">
+ <!-- get js from js folder-->
+ <script type="text/javascript" src="js/tabNetc.js"></script>
+</head>
 
-  </body>
+<body>
+<header>
+  <button class="tablink" onclick="opentab('Home', this, 'red')" id="defaultOpen">Home</button>
+  <button class="tablink" onclick="opentab('Lifeline', this, 'green')">Lifeline</button>
+  <button class="tablink" onclick="opentab('Family', this, 'violet')">Family</button>
+  <button class="tablink" onclick="opentab('About', this, 'blue')">About</button>
+  <button class="tablink" onclick="opentab('App', this, 'orange')">App</button>
+</header>
+
+<!-- tab button event N setting-->
+<section>
+ <div id="Home" class="tabcontent">
+   <h1>Welocome to Crazy Hunter Portfolio!</h1><br>
+     <div>동전의
+     <div class="shake-little shake-constant">
+     <a class="btn shake-hard" hover="ga('send', 'event', 'download', 'csshake-hard', 'expanded');">동(動)</a>
+      </div>!<br>
+      <!--set audio id N source-->
+      <audio id="audio_play">
+        <source src="audio/gunfire.ogg" type="audio/ogg">
+        <source src="audio/gunfire.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      <!--sound-->
+      <a onclick="audioplay()" style="background-Color:black;">헌팅의 헌!</a>
+       </div>
+    <br>
+    안녕하세요 <strong>사냥꾼 유동헌</strong>의 포트폴리오 사이트에 오신것을 환영합니다!
+
+ </div>
+
+  <div id="Lifeline" class="tabcontent">
+   <h1>London</h1>
+   <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="Family" class="tabcontent">
+   <h1>London</h1>
+   <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="About" class="tabcontent">
+   <h1>London</h1>
+   <p>London is the capital city of England.</p>
+  </div>
+
+  <div id="App" class="tabcontent">
+   <h1>London</h1>
+   <p>London is the capital city of England.</p>
+  </div>
+
+
+</section>
+
+</body>
+
 </html>
