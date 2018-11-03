@@ -4,6 +4,8 @@
   <title>YDH Portfolio</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
   <!-- tab style css-->
   <link rel="stylesheet" href="css/tab.css">
   <!--shake css -->
@@ -12,6 +14,8 @@
 </head>
 
 <body>
+<!-- get js from js folder-->
+<script type="text/javascript" src="js/tabNetc.js"></script>
 <!-- tab button event N setting-->
 <header>
   <button class="tablink" onclick="opentab('Home', this, 'red')" id="defaultOpen">Home</button>
@@ -29,14 +33,20 @@
       <div>움직일
       <!-- Move like a Madman css!-->
       <div class="shake-little shake-constant">
-        <a class="btn shake-hard" hover="ga('send', 'event', 'download', 'csshake-hard', 'expanded');">동(動)
-        </a>
+        <a class="btn shake-hard" hover="ga('send', 'event', 'download', 'csshake-hard', 'expanded');">동(動)</a>
       </div>!<br>
-      헌팅의 헌!
-      </div>
-      <br>
-    안녕하세요 <strong>사냥꾼 유동헌</strong>의 포트폴리오 사이트에 오신것을 환영합니다!
 
+      <!--sound-->
+      <a onmouseenter="audioplay()">헌팅의 헌!</a>
+      <audio id="audio_play">
+        <source src="sound/gunfire.ogg" type="audio/ogg">
+        <source src="sound/gunfire.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+
+    </div>
+    <br>
+    안녕하세요 <strong>사냥꾼 유동헌</strong>의 포트폴리오 사이트에 오신것을 환영합니다!
   </div>
 
   <div id="Lifeline" class="tabcontent">
@@ -62,22 +72,8 @@
 
 <!-- javascript function opentab-->
 <script>
-function opentab(cityName,elmnt,color) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablink");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].style.backgroundColor = "";
-    }
-    document.getElementById(cityName).style.display = "block";
-    elmnt.style.backgroundColor = color;
-}
 
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+
 </script>
 
 </body>
