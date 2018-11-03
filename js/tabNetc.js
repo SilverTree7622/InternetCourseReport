@@ -1,4 +1,4 @@
-function opentab(cityName,elmnt,color) {
+function opentab(tabname,elmnt,color) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -8,7 +8,7 @@ function opentab(cityName,elmnt,color) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].style.backgroundColor = "";
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(tabname).style.display = "block";
     elmnt.style.backgroundColor = color;
 }
 
@@ -16,8 +16,7 @@ function opentab(cityName,elmnt,color) {
 document.getElementById("defaultOpen").click();
 
 // play audio
-
 function audioplay() {
-  var audio = documnet.getElementById("audio_play");
+  var audio = document.getElementById('audio_play');
   audio.play();
 }
