@@ -14,11 +14,19 @@
 .tablink:hover {
     background-color: #777;
     -webkit-transition: background-color 0.9s;
+    -moz-transition: background-color 0.9s;
+    -ms-transition: background-color 0.9s;
+    -o-transition: background-color 0.9s;
+    transition: background-color 0.9s;
 }
 
 .tablink:not(hover) {
     background-color: #555;
     -webkit-transition: background-color 0.9s;
+    -moz-transition: background-color 0.9s;
+    -ms-transition: background-color 0.9s;
+    -o-transition: background-color 0.9s;
+    transition: background-color 0.9s;
 }
 
 /* Set default styles for tab content */
@@ -36,9 +44,3 @@
 #Family {background-color:violet;}
 #About {background-color:blue;}
 #App {background-color:orange;}
-
-
-
-.circleNtext {
-
-}
