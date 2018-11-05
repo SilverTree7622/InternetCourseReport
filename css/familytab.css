@@ -1,9 +1,26 @@
 .spinimage{
-  -webkit-animation: spin 4s infinite linear;
-  -o-animation: spin 4s infinite linear;
-  -moz-animation: spin 4s infinite linear;
-  animation: spin 4s infinite linear;
+  -webkit-animation: spin 8s infinite linear;
+  -o-animation: spin 8s infinite linear;
+  -moz-animation: spin 8s infinite linear;
+  animation: spin 8s infinite linear;
 }
+
+.spinimage:hover{
+    -webkit-animation-play-state: running;
+    -moz-animation-play-state: running;
+    -ms-animation-play-state: running;
+    -o-animation-play-state: running;
+    animation-play-state: running;
+}
+
+.spinimage:not(hover){
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -ms-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
 
 @-webkit-keyframes spin {
     0%  {-webkit-transform: rotate(0deg);}
