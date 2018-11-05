@@ -3,8 +3,104 @@
   <head>
     <meta charset="utf-8">
     <title>YDH Portfolio</title>
-  </head>
-  <body>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- tab html importing-->
+ <link rel="import" href="html/about.html">
+ <link rel="import" href="html/app.html">
+ <link rel="import" href="html/family.html">
+ <link rel="import" href="html/lifeline.html">
+ <!-- tab style css-->
+ <link rel="stylesheet" href="css/tab.css">
+ <!--shake css -->
+ <link rel="stylesheet" href="css/csshake-hard.css">
+ <link rel="stylesheet" href="css/csshake-little.css">
+ <!-- get js from js folder-->
+ <script type="text/javascript" src="js/tabNetc.js"></script>
+</head>
 
-  </body>
+<body>
+<header>
+  <button class="tablink" onclick="opentab('Home', this, 'red')" id="defaultOpen">Home</button>
+  <button class="tablink" onclick="opentab('Lifeline', this, 'green')">Lifeline</button>
+  <button class="tablink" onclick="opentab('Family', this, 'violet')">Family</button>
+  <button class="tablink" onclick="opentab('About', this, 'blue')">About</button>
+  <button class="tablink" onclick="opentab('App', this, 'orange')">App</button>
+</header>
+
+<!--Home Tag-->
+<section>
+ <div id="Home" class="tabcontent">
+   <h1>Welocome to Crazy Hunter Portfolio!</h1><br>
+     <div>움직일
+     <div class="shake-little shake-constant">
+     <a class="btn shake-hard" hover="ga('send', 'event', 'download', 'csshake-hard', 'expanded');">동(動)</a>
+      </div>!<br>
+
+      <!--set audio id N source-->
+      <audio id="audio_play">
+        <source src="audio/gunfire.ogg" type="audio/ogg">
+        <source src="audio/gunfire.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      <!--sound-->
+      <a onclick="audioplay()" style="cursor: pointer; background-Color:black;">헌팅의 헌!</a>
+       </div>
+    <br>
+    안녕하세요 <strong>사냥꾼 유동헌</strong>의 포트폴리오 사이트에 오신것을 환영합니다!
+ </div>
+</section>
+
+<!-- Lifeline Tab-->
+<section>
+  <div id="Lifeline" class="tabcontent">
+   <svg width="100%" height="400" font-weight="bold" fill="none" font-family="sans-serif">
+    <line x1="0" y1="50%" x2="100%" y2="50%" stroke-width="8" stroke="white" />
+
+    <!-- Life Circle on Lifeline-->
+    <circle cx="10%" cy="75%" r="4%" stroke="orange" stroke-width="14" />
+    <text x="10%" y="75%" text-anchor="middle" fill="white" font-size="100%" dy=".1em">1992.12.13</text>
+    <text x="10%" y="75%" text-anchor="middle" fill="white" font-size="100%" dy="1em">Born</text>
+
+    <circle cx="30%" cy="25%" r="5%" stroke="blue" stroke-width="14" />
+    <text x="30%" y="25%" text-anchor="middle" fill="white" font-size="100%" dy=".1em">2000.??.??</text>
+    <text x="30%" y="25%" text-anchor="middle" fill="white" font-size="100%" dy="1em">My First Memory</text>
+
+    <circle cx="50%" cy="75%" r="6%" stroke="yellow" stroke-width="14" />
+    <text x="50%" y="75%" text-anchor="middle" fill="white" font-size="100%" dy=".1em">2012.12.01</text>
+    <text x="50%" y="75%" text-anchor="middle" fill="white" font-size="100%" dy="1em">Success on Retried University admission</text>
+
+    <circle cx="70%" cy="25%" r="7%" stroke="purple" stroke-width="14" />
+    <text x="70%" y="25%" text-anchor="middle" fill="white" font-size="100%" dy=".1em">2014.02.01</text>
+    <text x="70%" y="25%" text-anchor="middle" fill="white" font-size="100%" dy="1em">Join the army</text>
+
+    <circle cx="90%" cy="75%" r="8%" stroke="pink" stroke-width="14" />
+    <text x="90%" y="75%" text-anchor="middle" fill="white" font-size="100%" dy=".1em">2018.11.09</text>
+    <text x="90%" y="75%" text-anchor="middle" fill="white" font-size="100%" dy="1em">Made My Own Site!</text>
+   </svg>
+  </div>
+</section>
+
+<section>
+  <div id="Family" class="tabcontent">
+   <h1>London</h1>
+   <p>London is the capital city of England.</p>
+  </div>
+</section>
+
+<section>
+  <div id="About" class="tabcontent">
+   <h1>London</h1>
+   <p>London is the capital city of England.</p>
+  </div>
+</section>
+
+<section>
+  <div id="App" class="tabcontent">
+   <h1>London</h1>
+   <p>London is the capital city of England.</p>
+  </div>
+</section>
+
+</body>
+
 </html>
