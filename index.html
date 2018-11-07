@@ -11,7 +11,9 @@
  <link rel="import" href="html/lifeline.html">
  <!-- tab style css-->
  <link rel="stylesheet" href="css/tab.css">
- <link rel="stylesheet" href="css/familytab.css">
+ <link rel="stylesheet" href="css/abouttab.css">
+ <link rel="stylesheet" href="css/lifelinetab.css">
+
  <!--shake css -->
  <link rel="stylesheet" href="css/csshake-hard.css">
  <link rel="stylesheet" href="css/csshake-little.css">
@@ -55,7 +57,7 @@
 <section>
   <div id="Lifeline" class="tabcontent">
    <svg width="100%" height="400" font-weight="bold" fill="none" font-family="sans-serif">
-    <line x1="0" y1="50%" x2="100%" y2="50%" stroke-width="8" stroke="white" />
+    <line class="pathanim" x1="0" y1="50%" x2="100%" y2="50%" stroke-width="8" stroke="white" />
 
     <!-- Life Circle on Lifeline-->
     <circle cx="10%" cy="75%" r="4%" stroke="orange" stroke-width="14" />
@@ -81,12 +83,14 @@
   </div>
 </section>
 
+<!-- Family Tab-->
 <section>
   <div id="Family" class="tabcontent">
 
   </div>
 </section>
 
+<!-- About Tab-->
 <section>
   <div id="About" class="tabcontent">
     <h1>About me!</h1>
@@ -109,6 +113,7 @@
   </div>
 </section>
 
+<!-- App Tab-->
 <section>
   <div id="App" class="tabcontent">
 
@@ -118,7 +123,7 @@
       <img src="img/호환.png" width="300">
         <br>webkit->구글,사파리
         <br>moz   ->파이어폭스
-        <br>ms    ->익스폴러러
+        <br>ms    ->익스풀러러
         <br>o     ->오페라</img>
       <br><br>또한 탭을 눌렀을때도 똑같이 작용하는걸 볼 수 있음
       <br><img src="gif/탭누르기.gif" width="80%"></img></p>
@@ -130,7 +135,8 @@
       <br>* audio태그와 js폴더에 있는 tabNetc.js의 함수와 a onclick을 활용했음</p>
 
     <h1 style="background-color:green;">"On Lifeline Tab"</h1>
-    <p>다른 상호작용이 있진 않습니다
+    <p> Life line 애니메이션을 lifelinetab.css를 활용하여 추가했음
+      <br> 키프레임을 활용 및 infinite를 animation에 추가하여 무한루프 방식으로 완성
       <br> * svg태그에 포함되어 있는 도형들을 여러속성들을 이용하여 반응식 웹으로 만듦</p>
 
     <h1 style="background-color:pink;">"On Family Tab"</h1>
