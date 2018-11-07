@@ -86,7 +86,7 @@
 <!-- Family Tab-->
 <section>
   <div id="Family" class="tabcontent">
-    <iframe src="html/family.html"></iframe>
+    <iframe src="html/family.html" style="border:none;"></iframe>
 
   </div>
 </section>
@@ -100,24 +100,27 @@
     <div id="circle">
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
-      x="0px" y="0px" width="300px" height="400px" viewBox="0 0 300 300"
-      enable-background="new 0 0 400 400" xml:space="preserve">
+      x="0px" y="0px" width="300px" height="300px" viewBox="0 0 300 300"
+      enable-background="new 0 0 300 300" xml:space="preserve">
           <defs>
               <path id="circlePath"
               d=" M 150, 150
-                  m -80, 0
-                  a 100,100 0 0,1 200,0
-                  a 100,100 0 0,1 -200,0 "/>
+                  m -120, 0
+                  a 120,120 0 0,1 240,0
+                  a 120,120 0 0,1 -240,0 "/>
+
           </defs>
           <circle cx="50%" cy="50%" r="75" fill="none"/>
-          <text x= "50%" y="52%" text-anchor="middle"
-          stroke="white" stroke-width="1px">
+          <text  x="50%" y="52%" text-anchor="middle"
+          stroke="blue" stroke-width="1px"
+          style="text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;">
             지향</text>
           <g>
               <use xlink:href="#circlePath" fill="none"/>
               <text fill="white">
                   <textPath xlink:href="#circlePath">
-                    #도서#영화#테니스#운동#여유한껏즐기기#자기계발#음악감상은필수#새벽엔감성충만을즐김
+                    #도서 #영화 #테니스 #운동 #여유한껏즐기기
+                     #자기계발 #음악감상은필수 #새벽엔감성충만을즐김 #먹방
                   </textPath>
               </text>
           </g>
@@ -158,8 +161,11 @@
     <p></p>
 
     <h1 style="background-color: blue;">"On About Tab"</h1>
-    <p></p>
-
+    <p>상호작용은 아니나
+      <br> <a href="http://www.w3.org/2000/svg">http://www.w3.org/2000/svg</a>와
+      <br> <a href="http://www.w3.org/1999/xlink">http://www.w3.org/1999/xlink</a>의 힘을 빌려
+      <br> 네임스페이스와 xml 마크업 언어를 빌려 svg의 path에 글자대로의 원을 임의로 만듦
+      <br> 이것또한 반응식을 고려하여 만들어짐</p>
 
   </div>
 </section>
