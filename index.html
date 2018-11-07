@@ -86,7 +86,7 @@
 <!-- Family Tab-->
 <section>
   <div id="Family" class="tabcontent">
-    <iframe src="html/family.html"></frame>
+    <iframe src="html/family.html"></iframe>
 
   </div>
 </section>
@@ -96,21 +96,35 @@
   <div id="About" class="tabcontent">
     <h1>About me!</h1>
 
-    <svg viewbox="0 0 100% 100%" font-weight="bold">
-    <text x="50%" y="80%" text-anchor="middle" fill="white" font-size="100%">지향</text>
-    </svg>
+    <div id="container">
+    <div id="circle">
+      <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      x="0px" y="0px" width="300px" height="400px" viewBox="0 0 300 300"
+      enable-background="new 0 0 400 400" xml:space="preserve">
+          <defs>
+              <path id="circlePath"
+              d=" M 150, 150
+                  m -80, 0
+                  a 100,100 0 0,1 200,0
+                  a 100,100 0 0,1 -200,0 "/>
+          </defs>
+          <circle cx="50%" cy="50%" r="75" fill="none"/>
+          <text x= "50%" y="52%" text-anchor="middle"
+          stroke="white" stroke-width="1px">
+            지향</text>
+          <g>
+              <use xlink:href="#circlePath" fill="none"/>
+              <text fill="white">
+                  <textPath xlink:href="#circlePath">
+                    #도서#영화#테니스#운동#여유한껏즐기기#자기계발#음악감상은필수#새벽엔감성충만을즐김
+                  </textPath>
+              </text>
+          </g>
+      </svg>
+    </div>
+    </div>
 
-    <svg width="100%" viewbox="0 0 100% 100%" class="spinimage" font-weight="bold">
-      <circle cx="50%" cy="50%" r="30%" stroke="yellow" fill="none" stroke-width="40" />
-      <text x="68%" y="50%" text-anchor="middle" fill="blue" font-size="100%"
-      >Content1</text>
-      <text x="50%" y="68%" text-anchor="middle" fill="blue" font-size="100%">
-        Content2</text>
-      <text x="70%" y="50%" text-anchor="middle" fill="blue" font-size="100%">
-        Content3</text>
-      <text x="70%" y="50%" text-anchor="middle" fill="blue" font-size="100%">
-        Content4</text>
-    </svg>
   </div>
 </section>
 
